@@ -1,0 +1,31 @@
+h1{
+    margin: auto;
+    text-align: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 50px;
+}
+.buttons{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+button {
+    padding: 10px;
+    font-size: 1.4em;
+    cursor: pointer;
+    width: 100%;
+    background-color: #ed008c;
+    color: white;
+    border: unset;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #6e0040;
+}

@@ -1,0 +1,41 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-count: auto;
+    grid-auto-rows: minmax(100px, auto);
+}
+.buttons-flex{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+button{
+    min-width: 200px;
+    width: max-content;
+    background: #ed008c;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: unset;
+    margin-left: auto;
+    margin-right: auto;
+}
+button:hover{
+    background: #6e0040;
+}
+.row{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 2.5%;
+    margin: auto;
+    border: 1px solid grey;
+    box-shadow: 2px 5px 2px grey;
+}
+
+input{
+    margin-right: 10px;
+}
