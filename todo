@@ -1,0 +1,11 @@
+> macrosave.js : write the update logic to be able to take saved macros and apply them to a game
+
+> macrosave.js : add buttons to the macro tab to be able to -saveall-/update all and interact with the
+addon from within the roll20 page
+
+> options/* : add the ability to delete an entire characters macros from the browser storage
+
+> options/* : add the ability to save changes to macros back to browser storage
+
+> options/* : add the ability to add new macros within the extension
+

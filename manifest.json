@@ -1,35 +1,42 @@
 {
-    "manifest_version":2,
-    "version":  "0.1.0",
+  "manifest_version": 2,
+  "version": "0.1.0",
 
-    "name": "Roll20 Macro Saver",
-    "short_name": "Roll20 Macro",
+  "name": "Roll20 Macro Saver",
+  "short_name": "Roll20 Macro",
 
-    "description": "Allows the saving and updating of your roll20 macros, making them editable outside of the roll20 app and allowing you to save commonly used macros to import into other games",
+  "description": "Allows the saving and updating of your roll20 macros, making them editable outside of the roll20 app and allowing you to save commonly used macros to import into other games",
 
-    "icons":{
-        "48": "icons/roll20macro-48.png"
-    },
-    "permissions":[
-        "activeTab",
-        "storage"
-    ],
+  "icons": {
+    "48": "icons/roll20macro-48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
 
-    "browser_specific_settings": {
-        "gecko": {
-          "id": "addon@example.com",
-          "strict_min_version": "42.0"
-        }
-      },
-
-      "options_ui": {
-        "page": "options/options.html",
-        "open_in_tab": true
-      },
-
-    "browser_action":{
-        "default_icon":"icons/roll20macro-32.png",
-        "default_title": "Roll20 Macro Saver",
-        "default_popup": "popup/saver.html"
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@example.com",
+      "strict_min_version": "42.0"
     }
+  },
+
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+
+  "browser_action": {
+    "default_icon": "icons/roll20macro-32.png",
+    "default_title": "Roll20 Macro Saver",
+    "default_popup": "popup/saver.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://app.roll20.net/editor/"],
+      "js": ["/content_scripts/macrosave.js"]
+    }
+  ]
 }
